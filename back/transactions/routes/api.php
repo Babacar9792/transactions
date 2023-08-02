@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::post("/transactions", [TransactionController::class, "transaction"]);
+Route::post("/transfert", [TransactionController::class, "transfert"]);

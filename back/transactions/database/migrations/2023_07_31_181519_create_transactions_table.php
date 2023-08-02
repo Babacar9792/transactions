@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->float("montant");
             $table->string("type_transaction");
-            $table->string("code");
+            $table->string("code")->nullable();
             $table->date("date_transaction")->default(now());
             $table->string("destinataire");
             $table->foreignIdFor(Compte::class)->constrained();
